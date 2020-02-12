@@ -2,7 +2,7 @@
 
 this repository is designed to be a starting point for building a react component library
 
-it comes with React, typescript, rollup, jest and storybook
+it comes with typescript, rollup, jest, renovate, storybook and github actions
 
 ## Commands
 | commands      | description                   |
