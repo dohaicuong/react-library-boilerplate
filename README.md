@@ -12,5 +12,4 @@ it comes with React, typescript, rollup, jest and storybook
 | yarn build    | build packages with rollup    |
 
 ## Roadmap
-- Adding CI/CD example for testing and publishing packages to npm
 - Adding chromatic for storybook visual testing, approve and document publishing

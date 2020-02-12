@@ -1,0 +1,27 @@
+image: node:latest
+
+stages:
+  - dependencies
+  - test
+  - deploy
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+install_dependencies:
+  stage: dependencies
+  script:
+    - yarn
+
+testing:
+  stage: test
+  script: yarn test
+
+deploy:
+  stage: deploy
+  script:
+    - yarn build
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+    - npm publish
