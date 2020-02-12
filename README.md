@@ -13,4 +13,3 @@ it comes with React, typescript, rollup, jest and storybook
 
 ## Roadmap
 - Adding chromatic for storybook visual testing, approve and document publishing
-- Moving to github actions
